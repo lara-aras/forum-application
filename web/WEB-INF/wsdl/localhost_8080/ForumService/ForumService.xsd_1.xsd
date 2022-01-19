@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (https://github.com/eclipse-ee4j/metro-jax-ws). RI's version is Metro/2.4.4 (RELEASE-2.4.4-ce05bec; 2020-04-17T12:44:48+0000) JAXWS-RI/2.3.3 JAXWS-API/2.3.3 JAXB-RI/2.3.3 JAXB-API/2.3.3 git-revision#unknown. --><xs:schema xmlns:tns="http://forumservice/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://forumservice/">
+
+<xs:element name="changePassword" type="tns:changePassword"/>
+
+<xs:element name="changePasswordResponse" type="tns:changePasswordResponse"/>
+
+<xs:element name="postComment" type="tns:postComment"/>
+
+<xs:element name="postCommentResponse" type="tns:postCommentResponse"/>
+
+<xs:element name="postReply" type="tns:postReply"/>
+
+<xs:element name="postReplyResponse" type="tns:postReplyResponse"/>
+
+<xs:element name="sayHello" type="tns:sayHello"/>
+
+<xs:element name="sayHelloResponse" type="tns:sayHelloResponse"/>
+
+<xs:element name="updateProfile" type="tns:updateProfile"/>
+
+<xs:element name="updateProfileResponse" type="tns:updateProfileResponse"/>
+
+<xs:complexType name="sayHello">
+<xs:sequence>
+<xs:element name="name" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="sayHelloResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="postComment">
+<xs:sequence>
+<xs:element name="topicID" type="xs:int"/>
+<xs:element name="text" type="xs:string" minOccurs="0"/>
+<xs:element name="userID" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="postCommentResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="updateProfile">
+<xs:sequence>
+<xs:element name="firstName" type="xs:string" minOccurs="0"/>
+<xs:element name="lastName" type="xs:string" minOccurs="0"/>
+<xs:element name="displayName" type="xs:string" minOccurs="0"/>
+<xs:element name="email" type="xs:string" minOccurs="0"/>
+<xs:element name="userID" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="updateProfileResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="changePassword">
+<xs:sequence>
+<xs:element name="newPassword" type="xs:string" minOccurs="0"/>
+<xs:element name="userID" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="changePasswordResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="postReply">
+<xs:sequence>
+<xs:element name="commentID" type="xs:int"/>
+<xs:element name="text" type="xs:string" minOccurs="0"/>
+<xs:element name="userID" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="postReplyResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>

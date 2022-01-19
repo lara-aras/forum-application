@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://localhost:8080/ForumApplication/UserWebService?wsdl" uri="wsdl/localhost_8080/ForumApplication/UserWebService.wsdl"/>
+    <system systemId="http://localhost:8080/ForumApplication/UserWebService?xsd=1" uri="wsdl/localhost_8080/ForumApplication/UserWebService.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/ForumApplication/UserWebService?null" uri="wsdl/localhost_8080/ForumApplication/UserWebService.null.xml"/>
+    <system systemId="http://localhost:8080/ForumServices/UserService?wsdl" uri="wsdl/localhost_8080/ForumServices/UserService.wsdl"/>
+    <system systemId="http://localhost:8080/ForumServices/UserService?xsd=1" uri="wsdl/localhost_8080/ForumServices/UserService.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/ForumService/ForumService?wsdl" uri="wsdl/localhost_8080/ForumService/ForumService.wsdl"/>
+    <system systemId="http://localhost:8080/ForumService/ForumService?xsd=1" uri="wsdl/localhost_8080/ForumService/ForumService.xsd_1.xsd"/>
+</catalog>
